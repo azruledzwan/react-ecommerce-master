@@ -10,7 +10,8 @@ class ItemPage extends Component {
   render() {
     return (
       <div className="itemPageWrapper">
-        <div className="itemImgWrapper" />
+        <div />
+        <img src="http://www.healthworks.org.uk/media/import/Images/nike%20pegasus%2033%20black%20running%20shoes-638brw.jpg" alt="Trulli"  className="itemImgWrapper" ></img>
         <div className="itemInfoWrapper">
           <Link className="backLink" to="/">
             <span className="small">
