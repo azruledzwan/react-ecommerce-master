@@ -91,7 +91,7 @@ class Header extends Component {
       <header className="header">
         <h1>
           <Link onlyActiveOnIndex={true} to="/" className="logo">
-            Trader
+            Nike Store
           </Link>
         </h1>
         {this.state.menuActive ? this.menuButton: ""}
