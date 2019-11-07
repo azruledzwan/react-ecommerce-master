@@ -25,7 +25,7 @@ class ItemPage extends Component {
           <h3 className="itemName">Nike Air VaporMax Flyknit 3</h3>
           <p className="itemCost frm">IDR 2,909,000</p>
           <p className="description">
-          Be bouncy and buoyant in the Nike Air VaporMax Flyknit 3. Inspired by high fashion, the upper features flowing lines of breathable, stretchable Flyknit construction. Revolutionary VaporMax Air technology keeps a spring in your step with toe-to-heel cushioning.
+          Be bouncy and elegent in the Nike Air VaporMax Flyknit 3. Inspired by high fashion, the upper features flowing lines of breathable, stretchable Flyknit construction. Revolutionary VaporMax Air technology keeps a spring in your step with toe-to-heel cushioning.
           </p>
           <p className="seller frm">By <span>TelUum</span></p>
           <button className="reqTradeBtn normalBtn">Add To Cart</button>

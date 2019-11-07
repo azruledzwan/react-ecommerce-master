@@ -16,11 +16,11 @@ class OtherInfo extends Component {
       return (
         <div className="lIWrapper" key="lIWrapper">
           <div className="inputWrapper">
-            <label htmlFor="localAddress">Local Address:</label>
-            <input id="localAddress" className="localAddress" type="text" placeholder="Local Address" />
+            <label htmlFor="localAddress">Name: </label>
+            <input id="localAddress" className="localAddress" type="text" placeholder="Name" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="city">City:</label>
+            <label htmlFor="city">Gneder: </label>
             <input id="city" className="city" type="text" placeholder="City" />
           </div>
           <div className="inputWrapper">
@@ -43,30 +43,30 @@ class OtherInfo extends Component {
       );
     } else {
       return (
-        <div className="lIWrapper" key="lIWrapperText">
+        <div className="lIWrapper" key="lIWrapper">
           <div className="inputWrapper">
-            <label>Local Address:</label>
-            <p className="inputData">House no 33</p>
+            <label htmlFor="localAddress">Name: </label>
+            <input id="localAddress" className="localAddress" type="text" placeholder="Name" />
           </div>
           <div className="inputWrapper">
-            <label>City:</label>
-            <p className="inputData">New Delhi</p>
+            <label htmlFor="city">Gneder: </label>
+            <input id="city" className="city" type="text" placeholder="City" />
           </div>
           <div className="inputWrapper">
-            <label>State:</label>
-            <p className="inputData">Delhi</p>
+            <label htmlFor="state">State:</label>
+            <input id="state" className="state" type="text" placeholder="State" />
           </div>
           <div className="inputWrapper">
-            <label>Landmark:</label>
-            <p className="inputData">Yasin Manzil</p>
+            <label htmlFor="landmark">Landmark:</label>
+            <input id="landmark" className="landmark" type="text" placeholder="Landmark" />
           </div>
           <div className="inputWrapper">
-            <label>Country:</label>
-            <p className="inputData">India</p>
+            <label htmlFor="country">Country:</label>
+            <input id="country" className="country" type="text" placeholder="Country" />
           </div>
           <div className="inputWrapper">
-            <label>Pin Code:</label>
-            <p className="inputData">100065</p>
+            <label htmlFor="pincode">Pin Code:</label>
+            <input id="pincode" className="pinCode" type="text" placeholder="Pin Code" />
           </div>
         </div>
       );
@@ -89,16 +89,18 @@ class OtherInfo extends Component {
       );
     } else {
       return (
-        <div className="cIWrapper" key="cIWrapperText">
-          <div className="inputWrapper">
-            <label>Email:</label>
-            <p className="inputData">arshdkhn1@gmail.com</p>
-          </div>
-          <div className="inputWrapper">
-            <label>Phone no:</label>
-            <p className="inputData">+91-9999999999</p>
-          </div>
+        <div className="cIWrapper" key="cIWrapper">
+        <div className="inputWrapper">
+          <label htmlFor="email">Email:</label>
+          <input id="email" className="email" type="email" placeholder="Email" />
         </div>
+        <div className="inputWrapper">
+          <label htmlFor="phone">Phone no:</label>
+          <input id="phone" className="phone" type="tel" placeholder="Phone No" />
+        </div>
+        
+      </div>
+      
       );
     }
   }
@@ -170,9 +172,9 @@ class OtherInfo extends Component {
   render() {
     return (
       <div className="otherInfo">
-        <div className="locationInfo">
+        <div className="personalInfo">
           <div className="heading">
-            <h3 className="normal marB20">Location Info</h3>
+            <h3 className="normal marB20">Personal Info</h3>
             {this.getButtons('LOCATION')}
           </div>
             {this.getLocationData()}
@@ -184,6 +186,7 @@ class OtherInfo extends Component {
           </div>
             {this.getContactData()}
         </div>
+        <center><button type="button" onClick="hello">SUBMIT</button></center>
       </div>
     );
   }
