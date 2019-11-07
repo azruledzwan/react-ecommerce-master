@@ -9,6 +9,7 @@ import Trades from './components/Trades/index';
 import ItemPage from './components/ItemPage/index';
 import MyItems from './components/MyItems/index';
 import ErrorPage from './components/ErrorPage/index';
+import ShoppingCart from './components/ShoppingCart/index';
 
 export default (
   <Route path="/" component={App}>
@@ -18,6 +19,7 @@ export default (
     <Route path="login" component={Login} />
     <Route path="trades" component={Trades} />
     <Route path="myItems" component={MyItems} />
+    <Route path="ShoppingCart" component={ShoppingCart} />
     <Route path="*" component={ErrorPage} />
   </Route>
 );
