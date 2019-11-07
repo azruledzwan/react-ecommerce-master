@@ -20,7 +20,7 @@ class OtherInfo extends Component {
             <input id="localAddress" className="localAddress" type="text" placeholder="Name" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="city">Gneder: </label>
+            <label htmlFor="city">Gender: </label>
             <input id="city" className="city" type="text" placeholder="City" />
           </div>
           <div className="inputWrapper">
@@ -49,7 +49,7 @@ class OtherInfo extends Component {
             <input id="localAddress" className="localAddress" type="text" placeholder="Name" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="city">Gneder: </label>
+            <label htmlFor="city">Gender: </label>
             <input id="city" className="city" type="text" placeholder="City" />
           </div>
           <div className="inputWrapper">
@@ -179,7 +179,7 @@ class OtherInfo extends Component {
             {this.getLocationData()}
         </div>
         
-        <center><button type="button" >SUBMIT</button></center>
+        <center><button variant="secondary" size="lg" active>SUBMIT</button></center>
       </div>
     );
   }
