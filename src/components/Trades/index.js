@@ -34,7 +34,7 @@ class Trades extends Component {
 
   getAllTradeRequests() {
     return ([
-      <TradeRequest key="1" />,
+      
       <TradeRequest key="2" />
     ]);
   }
@@ -60,28 +60,17 @@ class Trades extends Component {
       <div className="tradesWrapper">
         {this.getModal()}
         <div className="addTradeWrapper">
-          <Link to="myItems"><button className="tradeBtn allItemsBtn">My Items</button></Link>
-          <button
-            onClick={() => {
-              this.openModal();
-            }}
-            className="tradeBtn addItemBtn">
-            + Add Item
-          </button>
+          <Link to="myItems"><button className="tradeBtn allItemsBtn">My Shopping Cart</button></Link>
+          
         </div>
         <div className="tradesInfoWrapper">
           <div className="tradeReqWrapper">
-            <h3 className="unCap">Trade Requests</h3>
+            <h3 className="unCap">Product</h3>
             <div className="allTradeRequestsWrapper">
               {this.getAllTradeRequests()}
             </div>
           </div>
-          <div className="tradeProposedWrapper">
-            <h3 className="unCap">Trades Proposed</h3>
-            <div className="allProposedTradesWrapper">
-              {this.getAllProposedTrades()}
-            </div>
-          </div>
+          
         </div>
       </div>
     );
