@@ -29,11 +29,11 @@ class Header extends Component {
         <Link onlyActiveOnIndex={true} key={1} to="/" activeClassName="activeNavLink" className="navLink">
           Home
         </Link>
-        <Link onlyActiveOnIndex={true} key={2} to="/profile" activeClassName="activeNavLink" className="navLink">
-          Profile
+        <Link onlyActiveOnIndex={true} key={2} to="/trades" activeClassName="activeNavLink" className="navLink">
+          Product
         </Link>
-        <Link onlyActiveOnIndex={true} key={3} to="/trades" activeClassName="activeNavLink" className="navLink">
-          Trades
+        <Link onlyActiveOnIndex={true} key={3} to="/Profile" activeClassName="activeNavLink" className="navLink">
+          Register
         </Link>
         <Link onlyActiveOnIndex={true} key={4} to="/login" activeClassName="activeNavLink" className="navLink">
           Login

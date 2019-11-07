@@ -11,7 +11,8 @@ class ItemPage extends Component {
     return (
       <div className="itemPageWrapper">
         <div />
-        <img src="http://www.healthworks.org.uk/media/import/Images/nike%20pegasus%2033%20black%20running%20shoes-638brw.jpg" alt="Trulli"  className="itemImgWrapper" ></img>
+        <img src={this.props.location.state.gambar} alt="Trulli" className="itemImgWrapper" width="350" height="500" ></img>
+      
         <div className="itemInfoWrapper">
           <Link className="backLink" to="/">
             <span className="small">
@@ -21,14 +22,15 @@ class ItemPage extends Component {
               </svg>
             </span>All Items
           </Link>
-          <h3 className="itemName">Eloquent Javascript</h3>
-          <p className="itemCost frm">$40</p>
+          <h3 className="itemName">Nike Air VaporMax Flyknit 3</h3>
+          <p className="itemCost frm">IDR 2,909,000</p>
           <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla modi, odit explicabo hic doloremque commodi ab molestiae. Iure voluptatem labore et aliquid soluta inventore expedita quam vel a earum!
+          Be bouncy and buoyant in the Nike Air VaporMax Flyknit 3. Inspired by high fashion, the upper features flowing lines of breathable, stretchable Flyknit construction. Revolutionary VaporMax Air technology keeps a spring in your step with toe-to-heel cushioning.
           </p>
-          <p className="seller frm">By <span>Arshad Khan</span></p>
-          <button className="reqTradeBtn normalBtn">Request Trade</button>
+          <p className="seller frm">By <span>TelUum</span></p>
+          <button className="reqTradeBtn normalBtn">Add To Cart</button>
         </div>
+
       </div>
     );
   }
