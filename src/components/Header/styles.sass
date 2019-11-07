@@ -3,20 +3,22 @@
 .header
   display: flex
   padding: 0 0 30px 0
-  background: black
+  background: lightsalmon
 
 .header > h1
   text-align: center
   flex: 1
   a
     text-decoration: none
-    color: white
+    color: black
     letter-spacing: 4px
     transition: color .3s
     font-size: 1.8rem
     &:active, &:hover
       color: #444
 
+.logo 
+  color : black
 
 .menuBtn
   margin: 0
@@ -61,18 +63,18 @@ header
 
 .navLink
   transition: color .3s
-  color: white
+  color: black
   display: flex
   align-items: center
   justify-content: center
   font-size: 1rem
   line-height: 2.5
   text-transform: uppercase
-  background: black
+  
   &:hover
     cursor: pointer
     color: white
 
 .activeNavLink
-  color: white
+  color: grey
   text-decoration: none

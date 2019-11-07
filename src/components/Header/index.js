@@ -25,18 +25,18 @@ class Header extends Component {
     );
 
     this.loggedInMenu = (
-      <div className="menu">
+      <div className="menu" style={{display: 'flex', justifyContent: 'center'}}>
         <Link onlyActiveOnIndex={true} key={1} to="/" activeClassName="activeNavLink" className="navLink">
           Home
-        </Link>
-        <Link onlyActiveOnIndex={true} key={2} to="/trades" activeClassName="activeNavLink" className="navLink">
-          Product
         </Link>
         <Link onlyActiveOnIndex={true} key={3} to="/Profile" activeClassName="activeNavLink" className="navLink">
           Register
         </Link>
         <Link onlyActiveOnIndex={true} key={4} to="/login" activeClassName="activeNavLink" className="navLink">
           Login
+        </Link>
+        <Link onlyActiveOnIndex={true} key={2} to="/trades" activeClassName="activeNavLink" className="navLink">
+          Cart
         </Link>
       </div>
     );
@@ -88,14 +88,17 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="header">
-        <h1>
-          <Link onlyActiveOnIndex={true} to="/" className="logo">
-            Nike Store
-          </Link>
-        </h1>
+      <header >
+        <center>
+        <div >
+        <h1><center>
+        <Link onlyActiveOnIndex={true} to="/" className="logo">Nike Store</Link>
+        </center></h1>
+        
         {this.state.menuActive ? this.menuButton: ""}
         {this.state.nav}
+        </div>
+        </center>
       </header>
     );
   }
