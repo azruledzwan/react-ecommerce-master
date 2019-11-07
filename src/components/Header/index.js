@@ -94,11 +94,14 @@ class Header extends Component {
             Nike Store
           </Link>
         </h1>
+        <input className='Searchproduct' style={{width:'300px'}}type='text' placeholder='search'>
+        </input>
         {this.state.menuActive ? this.menuButton: ""}
         {this.state.nav}
       </header>
     );
   }
 }
+
 
 export default Header;
