@@ -35,7 +35,7 @@ class Header extends Component {
         <Link onlyActiveOnIndex={true} key={4} to="/login" activeClassName="activeNavLink" className="navLink">
           Login
         </Link>
-        <Link onlyActiveOnIndex={true} key={2} to="/ShoppingCart" activeClassName="activeNavLink" className="navLink">
+        <Link onlyActiveOnIndex={true} key={2} to="/trades" activeClassName="activeNavLink" className="navLink">
           Cart
         </Link>
       </div>
