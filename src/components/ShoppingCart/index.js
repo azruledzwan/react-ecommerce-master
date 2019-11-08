@@ -10,37 +10,20 @@ class ShoppingCart extends Component {
 
     render() {
         return (
-        <div className="Shopping-cart">
-        
-        <div class="title">
-            <h3 className="CartHeading text-center">MY CART</h3>
-        </div>
 
-        <div class="item">
-            <div class="buttons">
+            <div className="loginWrapper">
+            <h3 className="loginHeading text-center">My Cart</h3>
+            <div className="btnWrapper">
+            <div className="buttons">
                 <span class="delete-btn"></span>
                 
             </div>
- 
-            <div class="image">
-                <img src="item-1.png" alt="" />
+              <button className="loginBtn fbBtn">Facebook Login</button>
+              <button className="loginBtn googleBtn">Google Login</button>
+              <button className="loginBtn twitterBtn">Twitter Login</button>
             </div>
- 
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="minus.svg" alt="" />
-                </button>
-                </input>
-            </div>
- 
-            <div class="total-price">$549</div>
-        </div>
-
-    </div>
+          </div>
+        
           
     
     

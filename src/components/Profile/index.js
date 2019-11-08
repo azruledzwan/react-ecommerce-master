@@ -45,29 +45,26 @@ class OtherInfo extends Component {
       return (
         <div className="lIWrapper" key="lIWrapper">
           <div className="inputWrapper">
-            <label htmlFor="localAddress">Name: </label>
-            <input id="localAddress" className="localAddress" type="text" placeholder="Name" />
+            <label htmlFor="localAddress">Username: </label>
+            <input id="localAddress" className="localAddress" type="text" placeholder="Username" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="city">Gender: </label>
-            <input id="city" className="city" type="text" placeholder="City" />
+            <label htmlFor="city">Password: </label>
+            <input id="city" className="city" type="text" placeholder="Password" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="state">State:</label>
-            <input id="state" className="state" type="text" placeholder="State" />
+            <label htmlFor="state">Email:</label>
+            <input id="state" className="state" type="text" placeholder="Email" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="landmark">Landmark:</label>
-            <input id="landmark" className="landmark" type="text" placeholder="Landmark" />
+            <label htmlFor="landmark">Phone Number:</label>
+            <input id="landmark" className="landmark" type="text" placeholder="Phone Number" />
           </div>
           <div className="inputWrapper">
-            <label htmlFor="country">Country:</label>
-            <input id="country" className="country" type="text" placeholder="Country" />
+            <label htmlFor="country">Address:</label>
+            <input id="country" className="country" type="text" placeholder="Address" />
           </div>
-          <div className="inputWrapper">
-            <label htmlFor="pincode">Pin Code:</label>
-            <input id="pincode" className="pinCode" type="text" placeholder="Pin Code" />
-          </div>
+          
         </div>
       );
     }
