@@ -17,7 +17,7 @@ class TradeRequest extends Component {
           </br>
         </div>
         <div className="tradeBtnWrapper lower">
-        <button className="acceptBtn normalBtn">Make Payment</button>
+        <button className="acceptBtn normalBtn">Check Out</button>
          </div>
       </div>
     );
