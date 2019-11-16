@@ -7,6 +7,9 @@ class ItemPage extends Component {
     document.body.scrollTop = 0;
     document.querySelector('.menu').classList.remove('open');
   }
+  addtocart() {
+    alert("Your Item Has Been Added Into Your cart");
+  }
   render() {
     return (
       <div className="itemPageWrapper">
@@ -22,13 +25,14 @@ class ItemPage extends Component {
               </svg>
             </span>All Items
           </Link>
-          <h3 className="itemName">Nike Air VaporMax Flyknit 3</h3>
-          <p className="itemCost frm">IDR 2,909,000</p>
+          <h3 className="itemName">{this.props.location.state.name}</h3>
+          <p className="itemCost frm">{this.props.location.state.price}</p>
           <p className="description">
-          Be bouncy and elegent in the Nike Air VaporMax Flyknit 3. Inspired by high fashion, the upper features flowing lines of breathable, stretchable Flyknit construction. Revolutionary VaporMax Air technology keeps a spring in your step with toe-to-heel cushioning.
+          {this.props.location.state.desc}
           </p>
           <p className="seller frm">By <span>TelUum</span></p>
-          <button className="reqTradeBtn normalBtn">Add To Cart</button>
+          <button className="reqTradeBtn normalBtn" onClick={this.addtocart} >Add To Cart</button>
+          
         </div>
 
       </div>
