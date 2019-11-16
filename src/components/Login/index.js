@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles.sass';
+import { width } from 'window-size';
 
 class Login extends Component {
   componentDidMount() {
@@ -8,7 +9,13 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="loginWrapper">
+      <div className="loginWrapper"style={{width:500, justifyContent:true,}}>
+        <h3 className="userName" >User Name</h3>
+        <input className="logIn" type="text" style={{width:500}}></input>
+        <h3 className="password">Enter Your Password</h3>
+        <input className="logIn" type="text" style={{width:500}}></input>
+        <button className="enter">ENTER</button>
+        <br></br><br></br>
         <h3 className="loginHeading text-center">Login with your social account</h3>
         <div className="btnWrapper">
           <button className="loginBtn fbBtn">Facebook Login</button>
