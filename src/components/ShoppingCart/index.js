@@ -24,7 +24,9 @@ class ShoppingCart extends Component {
             </div>
           </div>
         
-          
+        <div className="popup" onclick="myFunction()">Click me!
+        <span class="popuptext" id="myPopup">Popup text...</span>
+      </div>
     
     
         );

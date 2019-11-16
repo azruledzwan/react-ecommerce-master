@@ -7,8 +7,8 @@ import './styles.sass';
 class Item extends Component {
   render() {
     return(
-      <div className="item" onClick={()=>{browserHistory.push({pathname:'/item/'+this.props.keyy,state:{gambar:this.props.gambar}})}} >
-<img className="content" src={this.props.gambar} width="350" height="345"></img>
+      <div className="item" onClick={()=>{browserHistory.push({pathname:'/item/'+this.props.keyy,state:{gambar:this.props.product.image,desc:this.props.product.description,name:this.props.product.name,price:this.props.product.harga}})}} >
+<img className="content" src={this.props.product.image} width="350" height="345"></img>
 <p>{this.props.key}</p>
 </div>
     );
